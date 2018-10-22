@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>server页面</title>
+    <style>
+        textarea{
+            width:200px;
+            height: 30px;
+            background-color: lightcoral;
+            overflow-x:hidden;
+        }
+        .two{
+            width: 50px;
+            height: 30px;
+            background-color: cadetblue;
+            border-radius: 5px;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h3>服务器推送消息</h3>
+
+<form action="/socket/push" method="post" accept-charset="utf-8" name="loginfrom">
+    <textarea id="info" name="info"></textarea>
+    <input type="submit" class="two" value="发送">
+</form>
+
+</body>
+</html>
